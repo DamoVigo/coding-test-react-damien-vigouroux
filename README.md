@@ -34,6 +34,7 @@ __Attention__, cela ne veut pas dire qu'un rafraichissement de la page est néc�
 - La route vers l'API à utiliser peut être mise à jour dans le fichier __/src/constants/api.js__
 - Les interractions avec l'API devraient se faire dans des __services__
 - Des componsants peuvent être créés pour démontrer votre compréhension de ceux-ci. Si nécéssaire, utiliser le dossier __/src/components/__ pour regrouper ces derniers.
+- Une attention sera aussi portée sur votre qualité d'utilisation de GIT
 
 
 ## Démarrer l'application
