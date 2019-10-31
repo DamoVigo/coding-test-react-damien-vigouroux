@@ -32,21 +32,18 @@ __Attention__, cela ne veut pas dire qu'un rafraichissement de la page est néc�
 - __get__ : `${ API }/users/${ id }` vous retournera les détails d'un utilisateur en particulier, avec les articles qui lui sont liés
 
 ## Indices
-- Les variables à utiliser pour les styles sont dans le fichier __/src/assets/scss/imports/_variables.scss__
-- La route vers l'API à utiliser peut être mise à jour dans le fichier __/src/constants/api.js__
+- Les variables à utiliser pour les styles sont dans le fichier `/src/assets/scss/imports/_variables.scss`
+- La route vers l'API à utiliser peut être mise à jour dans le fichier `/src/constants/api.js`
 - Les interractions avec l'API devraient se faire dans des __services__
-- Des componsants peuvent être créés pour démontrer votre compréhension de ceux-ci. Si nécéssaire, utiliser le dossier __/src/components/__ pour regrouper ces derniers.
+- Des componsants peuvent être créés pour démontrer votre compréhension de ceux-ci. Si nécéssaire, utiliser le dossier `/src/components/` pour regrouper ces derniers.
 - Une attention sera aussi portée sur votre qualité d'utilisation de GIT
 
 
 ## Démarrer l'application
-
 ### `npm install`
-
 Installe les dépendances nécessaires pour faire rouler l'application.
 
 ### `npm start`
-
 Roule l'application en mode de développement<br>
 Ouvrir [http://localhost:3000](http://localhost:3000) pour consulter dans un navigateur.
 
