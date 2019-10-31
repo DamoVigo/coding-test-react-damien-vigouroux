@@ -1,0 +1,13 @@
+body, input, button, textarea {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: $bodyFont;
+    color: $textColor;
+}
+
+h1, h2, h3 {
+    font-family: $titleFont;
+    color: $titleColor;
+}
+
+// Reste des propriétés des fonts...
