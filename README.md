@@ -17,6 +17,7 @@ Cette page consiste en un dropdown d'utilisateurs (peuplé à partir d'un appel 
 Au changement du dropdown, on demande la redirection vers une URL incluant l'ID de l'utilisateur choisi. Si aucun ID n'est fourni à l'URL, on peuple le reste de la page avec les informations du premier utilisateur dans la liste.
 
 Par exemple, si on considère deux utilisateurs (avec les ID 1 et 2 respectivement) :
+
 - `/users` et `users/1` afficheraient les informations de l'utilisateur #1
 - `/users/2` afficherait les information du second utilisateur
 
@@ -26,6 +27,7 @@ __Attention__, cela ne veut pas dire qu'un rafraichissement de la page est néc�
 
 ## Détails sur l'API
 2 appels vous seront possibles sur cet API. Un __list__ et un __get__.
+
 - __list__ : `${ API }/users` vous retournera la liste des utilisateurs
 - __get__ : `${ API }/users/${ id }` vous retournera les détails d'un utilisateur en particulier, avec les articles qui lui sont liés
 
