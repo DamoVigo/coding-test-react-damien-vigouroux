@@ -2,7 +2,7 @@
 Bienvenue dans le projet test de 04h11. Vos compétences en Front-End et en React seront mis à l'épreuve.
 
 ## Tâches
-Votre tâche principale sera de compléter ce repo dans le but d'obtenir un produit fini comportant les deux pages qui suivent. Ces pages testeront vos compétences en intégration, ainsi qu'en interactions avec un API REST. _Le lien vers cet API vous sera communiqué directement._
+Votre tâche principale sera de compléter ce repo dans le but d'obtenir un produit fini comportant les deux pages qui suivent. Ces pages testeront vos compétences en intégration, ainsi qu'en interactions avec un API REST. _Le lien vers cet API est indiqué plus bas._
 
 ### Home Page
 Une page simple, contenant un titre, un sous-sitre et un lien vers la page _User_.
@@ -25,7 +25,7 @@ __Attention__, cela ne veut pas dire qu'un rafraichissement de la page est néc�
 
 ![User Page](src/assets/images/user.page.png)
 
-## Détails sur l'API
+## Détails sur [https://coding-test-api.04h11.com](l'API)
 2 appels vous seront possibles sur cet API. Un __list__ et un __get__.
 
 - __list__ : `${ API }/users` vous retournera la liste des utilisateurs
