@@ -25,7 +25,7 @@ __Attention__, cela ne veut pas dire qu'un rafraichissement de la page est néc�
 
 ![User Page](src/assets/images/user.page.png)
 
-## Détails sur [https://coding-test-api.04h11.com](l'API)
+## Détails sur [l'API](https://coding-test-api.04h11.com)
 2 appels vous seront possibles sur cet API. Un __list__ et un __get__.
 
 - __list__ : `${ API }/users` vous retournera la liste des utilisateurs
