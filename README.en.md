@@ -31,6 +31,8 @@ __Warning__, this does not mean that a page refresh is necessary. It would be mo
 
 ## Details for the [API](https://coding-test-api.04h11.com)
 
+[https://coding-test-api.04h11.com](https://coding-test-api.04h11.com)
+
 2 calls will be made available on this API. A __list__ and a __get__.
 
 - __list__ : `${ API }/users` will return an array of users
@@ -45,9 +47,12 @@ __Warning__, this does not mean that a page refresh is necessary. It would be mo
 - We will also consider the way you use Git
 
 ## Start the project
+
 ### `npm install`
+
 Installs the dependecies
 
 ### `npm start`
+
 Starts the app in dev mode<br>
 Dev url : [http://localhost:3000](http://localhost:3000)
