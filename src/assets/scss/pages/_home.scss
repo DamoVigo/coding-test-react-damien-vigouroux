@@ -1,1 +1,39 @@
 // Styles de la page Home
+.infos-block {
+    h1 {
+        position: absolute; 
+        top: 50%; left: 50%; 
+        transform: translate(-50%, -50%);
+        text-shadow: 15px 15px $darkBlue;
+    }
+    p {
+       text-align: center;
+       padding-top: 320px
+    }
+}
+.nav-arrow-home {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+.MuiIcon-root {
+    color: $white;
+}
+
+.cercle {
+    width: 475px;
+    height: 475px;
+    border-radius: 228px;
+    background: linear-gradient(.80turn,$mainColor, 70%, $white);
+    margin-left: -50px;
+    margin-top: -60px  
+}
+
+.cercle-droite {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(.75turn,$mainColor, 70%, $white);
+    margin-left: 1040px;
+    margin-top: -460px
+}

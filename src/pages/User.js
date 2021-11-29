@@ -20,6 +20,7 @@ class UserPage extends Component {
 
     componentDidMount() {
         // userService.list() ... Pour remplir this.state.list
+        
     }
 
 
@@ -31,24 +32,77 @@ class UserPage extends Component {
                 </Helmet>
 
                 <div className="user-page content-wrap">
-                    <Link to="/" className="nav-arrow">
-                        <Icon style={{ transform: 'rotate(180deg)' }}>arrow_right_alt</Icon>
+                    <Link to="/" className="nav-arrow-user">
+                        <Icon style={{ transform: 'rotate(180deg)', fontSize: '80px' }}>arrow_right_alt</Icon>
                     </Link>
 
                     <div className="users-select">
                         <h1>
                             <select>
-                                { /* Liste dynamique à partir de l'API */ }
+                                { <option value="name">Marie-sophie</option> }
                             </select>
                         </h1>
                     </div>
 
-                    <div className="infos-block">
-                        { /* Infos dynamiques sur l'utilisateur sélectionné */ }
+                    <div className="infos-block-user">
+                        { 
+                            <>
+                                <div className="occupation">Occupation : <span>Exploratrice / pirate a mi temps</span></div>
+                                <div className="birthday">Birthday : <span> 1er fevrier 1999</span></div>
+                            </>
+                        }
                     </div>
 
                     <div className="articles-list">
-                        { /* Liste dynamique tirée de l'utilisateur sélectionné */ }
+                        { 
+                            <>
+                            <div className="block-card">
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                                <div className="card">
+                                    <div className="card-body">
+                                        <div className="card-title">Marie-Sophie</div>
+                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
+                            
+                                    </div>
+                                </div>
+                            </div>
+                            </>
+                            
+                        }
                     </div>
                 </div>
             </Fragment>

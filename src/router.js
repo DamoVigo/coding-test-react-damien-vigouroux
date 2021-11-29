@@ -17,7 +17,7 @@ class AppRouter extends React.Component {
                 <Route exact path="/" component={ HomePage } />
                 <Route exact path="/users" component={ UserPage } />
                 <Route exact path="/users/:id" component={ UserPage } />
-                <Route component={ E404Page } />
+                <Route exact path="*" component={ E404Page } />
             </Switch>
         )
 

@@ -1,1 +1,65 @@
 // Styles de la page User
+.users-select {
+    display: flex;
+    justify-content: center;
+    margin-top: -50px;
+}
+select {
+    width: 100%;
+    min-width: 900px;
+    border: 12px solid $white;
+    padding: 1em 1em;
+    font-size: 30px;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: transparent;
+  }
+
+span {
+    color: $white;
+}
+
+.infos-block-user {
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 100px;
+    padding: 50px;
+}
+
+.occupation {
+    margin-bottom: 10px;
+}
+
+.block-card {
+    display: flex;
+    flex-wrap: wrap;
+    padding:20px;
+    margin: 120px;
+   
+}
+
+.card {
+    display: block;
+    justify-content: center;
+    border-radius: $borderRadius;
+    box-shadow: $boxShadow;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 300px;
+    height: 350px;
+    padding: 15px;
+    background-color: $white;
+}
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card-text {
+    width: 100%;
+    padding: 0 1em 2em 1em;
+    justify-content: center;
+}
