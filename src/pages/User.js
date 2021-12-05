@@ -6,6 +6,7 @@ import Icon from '@material-ui/core/Icon';
 import { title } from 'utils';
 
 import { userService } from 'services';
+import { userIdService } from 'services/userId.service';
 
 
 class UserPage extends Component {
@@ -27,7 +28,7 @@ class UserPage extends Component {
                 const id = e.id
                 return this.setState({ list: [...this.state.list, {id, names}] })
                 });
-            })
+            })   
     }
     
     onChange = (user) => {
@@ -44,8 +45,25 @@ class UserPage extends Component {
     }
 
     render() {
-        console.log(`${this.state.id}`)
-        console.log(`${this.state.user}`)
+        this.id = this.state.id
+        if (this.id === null) {
+            this.id = 1
+        } if (this.id != null ) {
+        
+        const coucou = userIdService.listWithId(this.id).then(e => {
+            console.log(e)
+            console.log(e.occupation)
+            console.log(e.birthdate)
+            for (let i = 0; i < e.articles.length; i++) {
+                const element = e.articles[i];
+                console.log(element.name, element.content)
+            }
+            console.log(e.articles[0].name)
+            console.log(e.articles[0].content)
+            
+            
+        })
+    }
         return (
             <Fragment>
                 <Helmet>
