@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { Link } from "react-router-dom";
 import Icon from '@material-ui/core/Icon';
-
+import InfosComponent from '../components/infos'
 import { title } from 'utils';
 
 import { userService } from 'services';
@@ -45,21 +45,6 @@ class UserPage extends Component {
     }
 
     render() {
-        this.id = this.state.id
-        if (this.id === null) {
-            this.id = 1
-        } if (this.id != null ) {
-        
-        const coucou = userIdService.listWithId(this.id).then(e => {
-            console.log(e)
-            console.log(e.occupation)
-            console.log(e.birthdate)
-            for (let i = 0; i < e.articles.length; i++) {
-                const element = e.articles[i];
-                console.log(element.name, element.content)
-            }
-        })
-    }
         return (
             <Fragment>
                 <Helmet>
@@ -83,15 +68,8 @@ class UserPage extends Component {
                             </select>
                         </h1>
                     </div>
-
-                    <div className="infos-block-user">
-                        { 
-                            <>
-                                <div className="occupation">Occupation : <span>Exploratrice / pirate a mi temps</span></div>
-                                <div className="birthday">Birthday : <span> 1er fevrier 1999</span></div>
-                            </>
-                        }
-                    </div>
+                                
+                    <InfosComponent infos={this.state.id} />
 
                     <div className="articles-list">
                         { 

@@ -5,9 +5,14 @@ export const userIdService = {
 }
 
 function listWithId(id) {
+        this.id = id
+        if (this.id === null) {
+            this.id = 1
+        } if (this.id != null ) {
+        
     const get = { method: 'GET' }
     return new Promise((resolve, reject) => {
-        fetch(`${API}/users/${id}`, get)
+        fetch(`${API}/users/${this.id}`, get)
         .then(data => {
             return data.json()
         })
@@ -18,4 +23,4 @@ function listWithId(id) {
             reject(e)
         });
     });
-}
+}}
