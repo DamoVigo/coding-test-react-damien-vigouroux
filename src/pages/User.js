@@ -58,10 +58,6 @@ class UserPage extends Component {
                 const element = e.articles[i];
                 console.log(element.name, element.content)
             }
-            console.log(e.articles[0].name)
-            console.log(e.articles[0].content)
-            
-            
         })
     }
         return (
