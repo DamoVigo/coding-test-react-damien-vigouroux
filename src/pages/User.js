@@ -19,12 +19,33 @@ class UserPage extends Component {
     }
 
     componentDidMount() {
-        // userService.list() ... Pour remplir this.state.list
+       // userService.list() ... Pour remplir this.state.list
         
+        userService.list().then(response => {
+            response.map((e) => {
+                const names = e.name
+                const id = e.id
+                return this.setState({ list: [...this.state.list, {id, names}] })
+                });
+            })
+    }
+    
+    onChange = (user) => {
+        let index = user.nativeEvent.target.selectedIndex;
+        let label = user.nativeEvent.target[index].text;
+        const id = user.target.value
+        this.props.history.push({
+            pathname: `/users/${id}`
+        })
+        this.setState({ 
+            id: id,
+            user: label
+        })
     }
 
-
     render() {
+        console.log(`${this.state.id}`)
+        console.log(`${this.state.user}`)
         return (
             <Fragment>
                 <Helmet>
@@ -38,8 +59,13 @@ class UserPage extends Component {
 
                     <div className="users-select">
                         <h1>
-                            <select>
-                                { <option value="name">Marie-sophie</option> }
+                            <select onChange={this.onChange}>
+                                {   this.state.list.map((e) => {
+                                        return  (
+                                                <option key={e.id} value={e.id} label={e.names}>{e.names}</option>
+                                        ) 
+                                    })
+                                }
                             </select>
                         </h1>
                     </div>
