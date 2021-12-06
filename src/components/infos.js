@@ -11,7 +11,9 @@ const InfosComponent = (e) => {
     const fetchInfo = (id) => {
         const response = userIdService.listWithId(id).then((e) => {
             setOccup(e.occupation)
-            setBday(e.birthdate)
+            var parts = e.birthdate.split('-')
+            var date = new Date(parts[0], parts[1] - 1, parts[2])
+            setBday(date.toDateString())
         })
     }
 

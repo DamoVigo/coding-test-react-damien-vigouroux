@@ -3,10 +3,10 @@ import Helmet from 'react-helmet';
 import { Link } from "react-router-dom";
 import Icon from '@material-ui/core/Icon';
 import InfosComponent from '../components/infos'
+import ArticlesComponent from '../components/articles'
 import { title } from 'utils';
 
 import { userService } from 'services';
-import { userIdService } from 'services/userId.service';
 
 
 class UserPage extends Component {
@@ -70,58 +70,8 @@ class UserPage extends Component {
                     </div>
                                 
                     <InfosComponent infos={this.state.id} />
-
-                    <div className="articles-list">
-                        { 
-                            <>
-                            <div className="block-card">
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                                <div className="card">
-                                    <div className="card-body">
-                                        <div className="card-title">Marie-Sophie</div>
-                                        <div className="card-text"><p>Bonjour voici mon article ! voici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon articlevoici mon article</p></div>
-                            
-                                    </div>
-                                </div>
-                            </div>
-                            </>
-                            
-                        }
-                    </div>
+                    <ArticlesComponent articles={this.state.id} />
+                    
                 </div>
             </Fragment>
         )
