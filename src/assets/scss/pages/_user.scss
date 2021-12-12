@@ -6,23 +6,24 @@
 }
 select {
     width: 100%;
+    color: $white;
+    font-weight: bolder;
     min-width: 900px;
     border: 12px solid $white;
     padding: 1em 1em;
     font-size: 30px;
     cursor: pointer;
-    line-height: 1.1;
     background-color: transparent;
-  }
+}
 
 span {
     color: $white;
 }
 
 .infos-block-user {
-    display:flex;
+    display: flex;
     flex-direction: column;
-    align-items:flex-start;
+    align-items: flex-start;
     margin-left: 100px;
     padding: 50px;
 }
@@ -35,10 +36,7 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
-    padding:20px;
-    
-   
+    padding: 20px;
 }
 
 .card {
@@ -46,10 +44,10 @@ span {
     justify-content: center;
     border-radius: $borderRadius;
     box-shadow: $boxShadow;
-    margin: 20px;
+    margin: 50px;
     margin-bottom: 20px;
     max-width: 400px;
-    height: auto;
+    height: 500px;
     padding: 15px;
     background-color: $white;
 }

@@ -11,7 +11,7 @@ class HomePage extends Component {
         return (
             <Fragment>
                 <Helmet>
-                    { title('Page d\'accueil') }
+                    {title('Page d\'accueil')}
                 </Helmet>
                 <div className="cercle"></div>
                 <div className="cercle-droite"></div>

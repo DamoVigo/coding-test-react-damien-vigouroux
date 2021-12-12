@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { userIdService } from 'services/userId.service';
+import CardComponent from './card';
 
 const ArticlesComponent = (e) => {
 
@@ -8,7 +9,7 @@ const ArticlesComponent = (e) => {
 
 
     const fetchInfo = (id) => {
-        const response = userIdService.listWithId(id).then((a) => {
+         userIdService.listWithId(id).then((a) => {
             const todosArticles = a.articles
             setArticle(todosArticles)
         })
@@ -25,17 +26,9 @@ const ArticlesComponent = (e) => {
     return (
         <>
         <div className="articles-list">
-            {article.map((e) => {
-                console.log(e)
-                return <div className="block-card">
-                        <div className="card">
-                            <div className="card-body" key={e.id}>
-                                <div className="card-title">{e.name}</div>
-                                <div className="card-text"><p>{e.content}</p></div>
-                            </div>
-                        </div>
-                    </div>
+            {article.map((e, i) => {
                 
+                return CardComponent(e, i)
             })
             }
         </div>

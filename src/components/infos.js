@@ -15,13 +15,12 @@ const InfosComponent = (e) => {
             var date = new Date(parts[0], parts[1] - 1, parts[2])
             setBday(date.toDateString())
         })
+        return response
     }
 
     useEffect(() => {
         fetchInfo(id)
-        // return () => {
-        //     cleanup
-        // }
+
     }, [id])
 
     return (

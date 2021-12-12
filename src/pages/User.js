@@ -20,17 +20,15 @@ class UserPage extends Component {
     }
 
     componentDidMount() {
-       // userService.list() ... Pour remplir this.state.list
-        
         userService.list().then(response => {
             response.map((e) => {
                 const names = e.name
                 const id = e.id
-                return this.setState({ list: [...this.state.list, {id, names}] })
-                });
-            })   
+                return this.setState({ list: [...this.state.list, { id, names }] })
+            });
+        })
     }
-    
+
     onChange = (user) => {
         let index = user.nativeEvent.target.selectedIndex;
         let label = user.nativeEvent.target[index].text;
@@ -38,7 +36,7 @@ class UserPage extends Component {
         this.props.history.push({
             pathname: `/users/${id}`
         })
-        this.setState({ 
+        this.setState({
             id: id,
             user: label
         })
@@ -48,7 +46,7 @@ class UserPage extends Component {
         return (
             <Fragment>
                 <Helmet>
-                    { title('Page secondaire') }
+                    {title('Page secondaire')}
                 </Helmet>
 
                 <div className="user-page content-wrap">
@@ -59,19 +57,19 @@ class UserPage extends Component {
                     <div className="users-select">
                         <h1>
                             <select onChange={this.onChange}>
-                                {   this.state.list.map((e) => {
-                                        return  (
-                                                <option key={e.id} value={e.id} label={e.names}>{e.names}</option>
-                                        ) 
-                                    })
+                                {this.state.list.map((e) => {
+                                    return (
+                                        <option key={e.id} value={e.id} label={e.names}>{e.names}</option>
+                                    )
+                                })
                                 }
                             </select>
                         </h1>
                     </div>
-                                
+
                     <InfosComponent infos={this.state.id} />
                     <ArticlesComponent articles={this.state.id} />
-                    
+
                 </div>
             </Fragment>
         )
