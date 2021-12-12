@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { Router, Route, Switch, Redirect } from 'react-router-dom';
+import React from 'react';
+import { Router, Route, Switch } from 'react-router-dom';
 
 import {
     HomePage,
@@ -17,7 +17,7 @@ class AppRouter extends React.Component {
                 <Route exact path="/" component={ HomePage } />
                 <Route exact path="/users" component={ UserPage } />
                 <Route exact path="/users/:id" component={ UserPage } />
-                <Route component={ E404Page } />
+                <Route exact path="*" component={ E404Page } />
             </Switch>
         )
 

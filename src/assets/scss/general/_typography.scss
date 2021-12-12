@@ -11,3 +11,29 @@ h1, h2, h3 {
 }
 
 // Reste des propriétés des fonts...
+
+h1 {
+    font-size: 200px;
+    color: $white;
+    color: #fff;
+    font-weight: 900;   
+}
+
+.infos-block, .infos-block-user {
+    font-size: 30px;
+    color: $titleColor;
+    font-weight: 600;
+    letter-spacing: 1px;
+    p {
+        font-size: 50px;
+        color: $titleColor;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    
+}
+
+.card {
+    font-family: $titleFont;
+    font-weight: bold;
+}
